@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+		<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>나만의 동기부여 홈화면 만들기</title>
+
+    <style>
+        @font-face {
+            font-family: 'KBIZHanmaumGothic';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KBIZHanmaumGothic.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        * {
+            font-family: 'KBIZHanmaumGothic', sans-serif;
+        }        
+        body {
+            color:#333;
+            overflow:hidden;
+        }
+
+        .time{
+            font-size:8vh;
+        }
+        .zoaitech_kor{
+            font-size:7vh;
+        }
+        .zoaitech_eng{
+            font-size:3vh;
+        }
+        .todo{
+            font-size:2vh;
+        }
+
+        .author{
+            font-style:italic;
+            font-size:2vh;
+        }
+        .website{
+            font-size:2vh;
+        }
+        .website a{
+            color:#1B1464;
+            text-decoration:none;
+        }
+
+        .thumbnail{
+            width:100vw;
+            height:50vh;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+        }
+
+        .thumbnail img{
+            width:20vh;
+            height:20vh;
+        }
+
+        .main{
+            width:100vw;
+            height:35vh;
+
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+        }
+
+        .footer{
+            width:100vw;
+            height:5vh;
+
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+        }
+    </style>
+
+    <script src="index.js">
+    </script>
+</head>
+
+<body>
+    <body>
+        <div class="thumbnail">
+            <img src="https://zoahaza.files.wordpress.com/2022/11/zoahaza_blog_logo_basic.png">
+            <div class="zoaitech_kor">조아아이텍</div>
+            <div class="zoaitech_eng">zoaitech</div>
+        </div>
+        <div class="main">
+            <div id="time" class="time">12:00</div>
+            <div class="todo">남을 더 많이 도와주고 가치 창출하기</div>
+        </div>
+        <div class="footer">
+            <div class="author">조아하자</div>
+            <div class="website"><a href="https://zoahaza.blog">zoahaza.blog</a></div>
+        </div>
+    </body>
+</body>
+
+</html>
